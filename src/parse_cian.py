@@ -11,8 +11,8 @@ moscow_parser = cianparser.CianParser(location="Москва")
 def main():
     """Function docstring"""
     t = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M")
-    n_rooms = 1
-    csv_path = f'data/raw/{n_rooms}_{t}.csv'
+    n_rooms = 3
+    csv_path = f'C:/Users/235387/PycharmProjects/pabd24/data/{n_rooms}_{t}.csv'
     data = moscow_parser.get_flats(
         deal_type="sale",
         rooms=(n_rooms,),
